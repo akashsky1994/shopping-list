@@ -1,0 +1,24 @@
+{
+    "MONGO": {
+        "OPTIONS": {
+            "authSource": "admin",
+            "replicaSet": "StagingMongo3dot6-shard-0",
+            "poolSize": 20,
+            "autoReconnect": true,
+            "keepAlive": 30000,
+            "socketTimeoutMS": 360000,
+            "reconnectTries": 1000,
+            "reconnectInterval": 1000,
+            "w": "majority",
+            "wtimeout": 30000,
+            "j": true,
+            "readConcern": {
+                "level": "local"
+            },
+            "useUnifiedTopology": true,
+            "useNewUrlParser": true,
+            "useCreateIndex": true,
+            "useFindAndModify": false
+        }
+    }
+}

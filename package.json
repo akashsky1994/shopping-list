@@ -1,0 +1,24 @@
+{
+  "name": "slice-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r esm server.js",
+    "dev": "LOGISTICS_SERVICE_ENV=development node -r esm server.js",
+    "prod": "LOGISTICS_SERVICE_ENV=production node -r esm server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.11"
+  }
+}
