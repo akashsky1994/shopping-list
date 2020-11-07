@@ -4,7 +4,7 @@ Category Based Shopping List Service
 # Table of Content
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Api List](*api-list)
+* [Api List](#api-list)
 
 # Technologies
 The project Leverages Node.js and Mongo and docker.
