@@ -13,9 +13,9 @@ if (ENV === "development") {
 const baseConfig = {
     ENV,
     MONGO: {
-        URI: /*process.env.MONGO_URI ||*/ ("mongodb://localhost/slice-list")
+        URI: process.env.MONGO_URI
     },
-	PORT: process.env.PORT || 3003
+	PORT: process.env.APP_PORT || 3003
 };
 
 const config = _.merge(baseConfig, envConfig);

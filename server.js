@@ -89,7 +89,7 @@ const onListening = () => {
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(config.PORT || '3003');
+var port = normalizePort(config.PORT || '8080');
 app.set('port', port);
 
 /**

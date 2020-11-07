@@ -1,8 +1,6 @@
 {
     "MONGO": {
         "OPTIONS": {
-            "authSource": "admin",
-            "replicaSet": "StagingMongo3dot6-shard-0",
             "poolSize": 20,
             "autoReconnect": true,
             "keepAlive": 30000,
