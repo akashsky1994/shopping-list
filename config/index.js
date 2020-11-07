@@ -2,12 +2,10 @@ import _ from "lodash";
 
 const ENV = process.env.SLICE_ENV;
 let envConfig = {};
-if (ENV === "development") {
-    envConfig = require("./env/development.json");
-} else if (ENV === "staging") {
-    envConfig = require("./env/staging.json");
-} else if (ENV === "production") {
-    envConfig = require("./env/production.json");
+
+//Depending upon environment we can add different config 
+if(ENV){
+    envConfig = require(`./${ENV}.json`);
 }
 
 const baseConfig = {
