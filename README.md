@@ -4,7 +4,7 @@ Category Based Shopping List Service
 # Table of Content
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [APIs](*apis)
+* [Api List](*api-list)
 
 # Technologies
 The project Leverages Node.js and Mongo and docker.
@@ -16,7 +16,7 @@ $ docker-compose build
 $ docker-compose up
 ```
 
-# APIs
+# Api List
 1. Create an item category
 
 The endpoint will create a category
