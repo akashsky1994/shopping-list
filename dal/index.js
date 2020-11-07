@@ -11,7 +11,7 @@ const CategoryList = mongoose.model("CategoryList");
  * @returns {Promise}
  */
 const saveCategoryInDB = (category) => {
-    return Category.create({ category: category, isActive: false })
+    return Category.create({ category: category, isActive: true })
 };
 
 /**
@@ -26,7 +26,7 @@ const saveItemsInDB = (categoryId, item) => {
 /**
  * fetchCategoryId - Get the Category Id from category if exists
  * @param {String} category
- * @returns {String} categoryId
+ * @returns {Promise} categoryId
  */
 const fetchCategoryId = (category) => {
     return Category.findOne({ category: category, isActive: true }).exec();

@@ -20,7 +20,8 @@ const createCategory = async (category) => {
 const addItemToList = async (category, item) => {
     category = category.replace(/[^\w\s]/gi, '');
     item = item.replace(/[^\w\s]/gi, '');
-    const categoryResponse = fetchCategoryId(category);
+    const categoryResponse = await fetchCategoryId(category);
+    console.log(categoryResponse);
     if (!categoryResponse) {
         throw new NotFoundError("Category Not Found");
     }

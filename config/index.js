@@ -11,7 +11,7 @@ if(ENV){
 const baseConfig = {
     ENV,
     MONGO: {
-        URI: process.env.MONGO_URI
+        URI: process.env.MONGO_URI || ("mongodb://localhost/slice-list")
     },
 	PORT: process.env.APP_PORT || 3003
 };
