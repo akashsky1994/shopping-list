@@ -1,5 +1,5 @@
 ## Shopping List
-Category Based Shopping List Service
+Category Based Shopping List Service (Dockerized)
 
 # Table of Content
 * [Technologies](#technologies)
